@@ -1,6 +1,10 @@
 # pilgrimage
 I created this script to scrape Trip Advisor "Things to Do" reviews from various tourist locations in Greece. The Monastery of Saint John the Theologian on Patmos Island is the default URL but you change this.
 
+FYI: I wrote these instructions for a beginner Python user and have included details which I found helpful along the way.
+
+I based the script on https://github.com/giuseppegambino/Scraping-TripAdvisor-with-Python-2020 with some major changes. 
+
 # Set up:
   1. Install Python 3.9
   2. Download get-pip.py: https://pip.pypa.io/en/stable/installing/
