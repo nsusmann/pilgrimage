@@ -1,9 +1,12 @@
 # pilgrimage
-I created this script to scrape Trip Advisor "Things to Do" reviews from various tourist locations in Greece. The Monastery of Saint John the Theologian on Patmos Island is the default URL but you change this.
+I created this script to scrape Trip Advisor "Things to Do" reviews from various tourist locations in Greece. The Monastery of Saint John the Theologian on Patmos Island is the default URL but you change this. The script will 1) create a csv file with field headings 2) open the Trip Advisor webpage 3) read through all of the reviews for that place and find: reviewer name, date of review, title of review, review score, and review 4) record this data to the csv 5) closes.
 
 FYI: I wrote these instructions for a beginner Python user and have included details which I found helpful along the way.
 
 I based the script on https://github.com/giuseppegambino/Scraping-TripAdvisor-with-Python-2020 with some major changes. 
+
+# My question:
+If anyone knows how to tweak the script so that there aren't blank lines in between each row, please let me know! 🦖
 
 # Set up:
   1. Install Python 3.9
