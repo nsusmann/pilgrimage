@@ -43,7 +43,7 @@ for i in range(0, 600, 1):
 # define what datasets to find: name = [container from above].[search tool].[xpath name].[additional commands]   
     for j in range(len(container)):
         rating = container[j].find_element_by_xpath(".//span[contains(@class, 'ui_bubble_rating bubble_')]").get_attribute("class").split("_")[3]
-        person = container[j].find_element_by_class_name('info_text').text.split("\n")[0]#person but not place
+        person = container[j].find_element_by_class_name('info_text').text.split("\n")[0] # this will grab the person but not place
         title = container[j].find_element_by_css_selector('span.noQuotes').text.replace("\n", "  ")
         review = container[j].find_element_by_xpath(".//p[@class='partial_entry']").text.replace("\n", "  ")
         review_date = container[j].find_element_by_class_name('ratingDate').text[9:]
@@ -51,7 +51,7 @@ for i in range(0, 600, 1):
 # write data into your csv
         csvWriter.writerow([person, title, rating, review, review_date])
         
-# change the page            
+# click on "next" to scroll to a different page            
     driver.find_element_by_xpath('.//a[@class="nav next ui_button primary"]').click()
 
 # quit selenium
